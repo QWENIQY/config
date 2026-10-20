@@ -71,6 +71,10 @@ pasword = `voidlinux`
 
 # Nvidia Graphics Driver Setup (REQUIRED for Nvidia GPU)
 
+> UPDATE SYSTEM
+
+`sudo xbps-install -u xbps`
+
 > Add voids non-free repos to system
 
 `sudo xbps-install -S void-repo-nonfree`
