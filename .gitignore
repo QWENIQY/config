@@ -17,3 +17,7 @@ usb2/**
 .fehbg
 .inputrc
 .viminfo
+
+.config/mozilla/**
+
+.git-credentials
