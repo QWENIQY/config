@@ -18,6 +18,6 @@ usb2/**
 .inputrc
 .viminfo
 
-.config/mozilla/**
+.config/mozilla/
 
 .git-credentials
