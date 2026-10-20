@@ -93,6 +93,10 @@ pasword = `voidlinux`
 
 `options nvidia-drm modeset=1`
 
+> Update initramfs
+
+`sudo xbps-reconfigure -fa`
+
 > Reboot the system
 
 `sudo reboot`
