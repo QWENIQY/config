@@ -5,3 +5,6 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
+
+# Ensure correct keyboard layout
+exec setxkbmap gb
