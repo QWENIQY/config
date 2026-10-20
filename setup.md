@@ -45,7 +45,7 @@ pasword = `voidlinux`
 
 ### Services (REQUIRED)
 
-> dbus, dhcpcd
+> wpa_supplicant, dhcpcd
 
 # WiFi Setup (OPTIONAL)
 
@@ -92,6 +92,14 @@ pasword = `voidlinux`
 > Add this below code to that file
 
 `options nvidia-drm modeset=1`
+
+> Blacklist nouveau from grubo
+
+`sudo vim /etc/default/grub`
+
+> Update this line
+
+`GRUB-CMDLINE_LINUX-DEFAULT="loglevel=4 quiet modprobe.blacklist=nouveau rd.driver.blacklist=nouveau"`
 
 > Update initramfs
 
