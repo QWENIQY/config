@@ -99,28 +99,6 @@ pasword = `voidlinux`
 
 `sudo xbps-install -S xorg-minimal xorg-fonts i3 i3status i3lock rofi alacritty firefox-esr xrandr git xdg-utils`
 
-> Setup Monitor Config (OPTIONAL)
-
-> `vim ~/.xinitrc`
-
-
-```
-xrandr --fb 9600x2160 \
-        --output HDMI-0 --primary --mode 3840x2160 --rate 143.86 --pos 0x0 \
-        --output DP-0 --mode 3840x2160 --rate 60 --pos 3840x0 \
-        --output DP03 --mode 1920x1080 --rate 60 --pos 7680x0
-
-exec i3
-```
-
-> ***PLEASE NOTE: The end monitor 1920x1080 will be zoomed in due to a limitation of x11 scaling for monitors however due to the usage this is not a problem and should not be considered an issue with this config. IT IS A LIMITATION OF X11 and I3***
-
-> Add Correct monitor scaling for x11
-
-`vim .Xresources`
-
-`Xft.dpi: 192`
-
 ## Setup Firefox Scaling (OPTIONAL)
 
 > Open new tab and go to about:config
