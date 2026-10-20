@@ -1,0 +1,29 @@
+configuration {
+    /* Enable auto-scaling fonts if your system DPI changes */
+    font: "Noto Sans 20"; 
+    show-icons: true;
+    icon-theme: "Papirus";
+    font-size: 32px;
+}
+
+window {
+    width:            35% ;       
+    height:           45% ;      
+    border:           0.2ch ;   
+    border-radius:    0.5em ;  
+    padding:          2% 2% ;
+}
+
+element {
+    /* Scale element spacing so list items don't crowd or stretch */
+    padding:          16px 16px ; 
+    font-size: 32px;
+    spacing:          1ch ;
+}
+
+element-icon {
+    /* Scale icons perfectly alongside your text */
+    size:             2.5em ;     
+    font-size: 32px;
+}
+
