@@ -111,4 +111,9 @@ pasword = `voidlinux`
 
 > Change value to `2.0`
 
+## Setup Auto Login and Route to I3 Lock
+> This command sets the config to auto login tty
+
+`echo 'GETTY_ARGS="--autologin your_username --noclear 38400 linux"' | sudo tee /etc/sv/agetty-tty1/conf`
+
  
