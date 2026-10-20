@@ -1,4 +1,3 @@
-exec setxkbmap gb
 xrandr --fb 9600x2160 \
 	--output HDMI-0 --primary --mode 3840x2160 --rate 143.86 --pos 0x0 \
 	--output DP-0 --mode 3840x2160 --rate 60 --pos 3840x0 \
