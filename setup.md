@@ -97,7 +97,7 @@ pasword = `voidlinux`
 
 > Install basics
 
-`sudo xbps-install -S xorg-minimal xorg-fonts i3 i3status i3lock rofi alacritty firefox-esr xrandr git xdg-utils setxkbmap`
+`sudo xbps-install -S xorg-minimal xorg-fonts i3 i3status i3lock rofi feh alacritty firefox-esr xrandr git xdg-utils setxkbmap`
 
 ## Setup Firefox Scaling (OPTIONAL)
 
