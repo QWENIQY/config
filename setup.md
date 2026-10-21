@@ -41,11 +41,12 @@ pasword = `voidlinux`
 
 ### Groups (REQUIRED)
 
-> network, audio, video, input, storage
+> 
+audio, video, input, storage, users, xbuilder
 
 ### Services (REQUIRED)
 
-> wpa_supplicant, dhcpcd, users, xbuilder
+> wpa_supplicant, dhcpcd, acpid, chronyd
 
 # WiFi Setup (OPTIONAL)
 
