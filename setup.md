@@ -48,27 +48,6 @@ audio, video, input, storage, users, xbuilder
 
 > wpa_supplicant, dhcpcd, acpid, chronyd
 
-# WiFi Setup (OPTIONAL)
-
-> Get id name of your wifi card interface
-
-`ip a`
-
-> Generate the WiFi configuration
-
-`wpa_passphrase "WIFI SSID" "WIFI PASSWORD" | sudo tee /etc/wpa_supplicant/wpa_supplicant.conf`
-
-> Connect to WiFi
-
-`sudo wpa_supplicant -B -i [WIFI CARD / INTERFACE NAME] -c /etc/wpa_supplicant/wpa_supplicant.conf`
-
-> Request IP Address
-
-`sudo dhcpcd [WIFI CARD / INTERFACE NAME]`
-
-> Test the Internet
-
-`ping google.com`
 
 # Nvidia Graphics Driver Setup (REQUIRED for Nvidia GPU)
 
@@ -84,7 +63,7 @@ audio, video, input, storage, users, xbuilder
 
 > Install Linux Headers and Drivers
 
-`sudo xbps-install -S linux-headers nvidia vim'
+`sudo xbps-install -S linux-headers nvidia dbus vim'
 
 > Reboot the system
 
