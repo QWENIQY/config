@@ -85,10 +85,6 @@ pasword = `voidlinux`
 
 `sudo xbps-install -S linux-headers nvidia dkms`
 
-> Enable DRM Modesetting
-
-`sudo vim /etc/modprobe.d/nvidia.conf`
-
 > Add this below code to that file
 
 `options nvidia-drm modeset=1`
@@ -99,7 +95,7 @@ pasword = `voidlinux`
 
 > Update this line
 
-`GRUB-CMDLINE_LINUX-DEFAULT="loglevel=4 quiet modprobe.blacklist=nouveau rd.driver.blacklist=nouveau"`
+`GRUB-CMDLINE_LINUX-DEFAULT="loglevel=4 modprobe.blacklist=nouveau rd.driver.blacklist=nouveau"`
 
 > Update initramfs
 
