@@ -84,23 +84,7 @@ audio, video, input, storage, users, xbuilder
 
 > Install Linux Headers and Drivers
 
-`sudo xbps-install -S linux-headers nvidia dkms`
-
-> Add this below code to that file
-
-`options nvidia-drm modeset=1`
-
-> Blacklist nouveau from grubo
-
-`sudo vim /etc/default/grub`
-
-> Update this line
-
-`GRUB-CMDLINE_LINUX-DEFAULT="loglevel=4 modprobe.blacklist=nouveau rd.driver.blacklist=nouveau"`
-
-> Update initramfs
-
-`sudo xbps-reconfigure -fa`
+`sudo xbps-install -S linux-headers nvidia vim'
 
 > Reboot the system
 
@@ -110,7 +94,7 @@ audio, video, input, storage, users, xbuilder
 
 > Install basics
 
-`sudo xbps-install -S xorg-minimal xorg-fonts i3 i3status i3lock rofi feh alacritty firefox-esr xrandr git xdg-utils setxkbmap`
+`sudo xbps-install -S xorg-minimal xorg-fonts mesa-dri i3 i3status i3lock rofi feh alacritty firefox-esr xrandr git`
 
 ## Setup Firefox Scaling (OPTIONAL)
 
